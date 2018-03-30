@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Mauricio Romero">
+    <meta name="description" content="Sitio Web Responsivo para Fotografos principiantes">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+    <title>Comenzando con la Fotografía</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <header>
+      <h1>Comenzando con la Fotografía</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="paisajes.html">Paisajes</a>
+        <a href="retratos.html">Retratos</a>
+      </nav>
+    </header>
+    <div id="contenido">
+      <div class="central">
+        <figure>
+          <picture>
+            <source media="(min-width: 900px)" srcset="imagenes/abstractos-cuadrados.jpg">
+            <source media="(max-width: 900px)" srcset="imagenes/abstractos-cuadrados.jpg">
+            <img src="imagenes/abstractos-cuadrados.jpg" alt="">
+          </picture>
+        </figure>
+      </div>
+      <div class="secundaria-izquierda">
+        <figure>
+          <picture>
+            <source media="(min-width: 900px)" srcset="imagenes/abstractos-lineas.jpg">
+            <source media="(max-width: 900px)" srcset="imagenes/abstractos-lineas.jpg">
+            <img src="imagenes/abstractos-lineas.jpg" alt="">
+          </picture>
+          <br>
+          <a href="paisajes.html">Paisajes</a>
+        </figure>
+      </div>
+      <div class="secundaria-derecha">
+        <figure>
+          <picture>
+            <source media="(min-width: 900px)" srcset="imagenes/abstractos-x.jpg">
+            <source media="(max-width: 900px)" srcset="imagenes/abstractos-x.jpg">
+            <img src="imagenes/abstractos-x.jpg" alt="">
+          </picture>
+          <br>
+          <a href="retratos.html">Retratos</a>
+        </figure>
+      </div>
+    </div>
+    <footer>
+      <div class="">
+          <h2>Contacto</h2>
+          <a href="mailto:mauricio.a.romero@gmail.com">mauricio.a.romero@gmail.com</a>
+          <br>
+          Av. Colon 0 - Cordoba Capital
+          <br>
+          Telefono 0351-155372635
+      </div>
+      <div class="">
+        <h2>Terminos</h2>
+        Conoce nuestros terminos y condiciones <a href="#">aqui</a>
+      </div>
+      <div class="">
+        <h2>Redes Sociales</h2>
+        <img src="imagenes/facebook.png" alt=""> ComenzandoConLaFotografia
+        <br>
+        <img src="imagenes/twitter.png" alt=""> ComenzandoConLaFotografia
+        <br>
+        <img src="imagenes/instagram.png" alt=""> ComenzandoConLaFotografia
+      </div>
+      <div class="">
+        <h2>Derechos</h2>
+        &copy; 2018
+      </div>
+    </footer>
+  </body>
+</html>

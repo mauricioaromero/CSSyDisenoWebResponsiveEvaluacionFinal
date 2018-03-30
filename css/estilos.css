@@ -1,0 +1,80 @@
+body{
+  font-family: 'Dancing Script', cursive;
+  background: #02010a;
+}
+
+header{
+  background: #5b7989;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px; /*Para Mozilla Firefox*/
+  -webkit-border-radius: 10px 10px 0px 0px; /*Para Safari*/
+  width: 100%;
+}
+
+#contenido{
+  text-align: center;
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+	flex-flow: row wrap;
+}
+
+#contenido img{
+ border: 2px solid #02010a;
+ width: 50%;
+}
+
+.central{
+  background: #82c3a6;
+  text-align: center;
+  width: 100%;
+}
+
+.central img{
+  border: 2px solid #02010a;
+  width: 90%;
+}
+
+.secundaria-izquierda{
+  background: #d5c75f;
+  text-align: center;
+  width: 50%;
+}
+
+.secundaria-izquierda img{
+  border: 2px solid #02010a;
+  width: 90%;
+}
+
+.secundaria-derecha{
+  background: #d5c75f;
+  text-align: center;
+  width: 50%;
+}
+
+.secundaria-derecha img{
+  border: 2px solid #02010a;
+  width: 90%;
+}
+
+footer{
+  background: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px; /*Para Mozilla Firefox*/
+  -webkit-border-radius: 0px 0px 10px 10px; /*Para Safari*/
+  width: 100%;
+  display: flex;
+	flex-flow: row wrap;
+  text-align: center;
+}
+
+footer img{
+  width: 25px;
+}
+
+footer div{
+  width: 25%;
+}
