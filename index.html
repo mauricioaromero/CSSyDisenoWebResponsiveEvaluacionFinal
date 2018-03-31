@@ -13,13 +13,13 @@
     <header>
       <h1>Comenzando con la Fotografía</h1>
       <nav>
-        <a href="index.html">Inicio</a>
+        <a href="index.html" id="pagina-actual">Inicio</a>
         <a href="paisajes.html">Paisajes</a>
         <a href="retratos.html">Retratos</a>
       </nav>
     </header>
     <div id="contenido">
-      <div class="central">
+      <div class="imagen-central">
         <figure>
           <picture>
             <source media="(min-width: 900px)" srcset="imagenes/abstractos-cuadrados.jpg">
@@ -28,26 +28,24 @@
           </picture>
         </figure>
       </div>
-      <div class="secundaria-izquierda">
-        <figure>
+      <div class="imagen-secundaria">
+        <figure class="img-paisaje">
           <picture>
             <source media="(min-width: 900px)" srcset="imagenes/abstractos-lineas.jpg">
             <source media="(max-width: 900px)" srcset="imagenes/abstractos-lineas.jpg">
             <img src="imagenes/abstractos-lineas.jpg" alt="">
           </picture>
-          <br>
-          <a href="paisajes.html">Paisajes</a>
+          <figcaption><a href="paisajes.html">Paisajes</a></figcaption>
         </figure>
       </div>
-      <div class="secundaria-derecha">
-        <figure>
+      <div class="imagen-secundaria">
+        <figure class="img-retrato">
           <picture>
             <source media="(min-width: 900px)" srcset="imagenes/abstractos-x.jpg">
             <source media="(max-width: 900px)" srcset="imagenes/abstractos-x.jpg">
             <img src="imagenes/abstractos-x.jpg" alt="">
           </picture>
-          <br>
-          <a href="retratos.html">Retratos</a>
+          <figcaption><a href="retratos.html">Retratos</a></figcaption>
         </figure>
       </div>
     </div>
@@ -56,13 +54,13 @@
           <h2>Contacto</h2>
           <a href="mailto:mauricio.a.romero@gmail.com">mauricio.a.romero@gmail.com</a>
           <br>
-          Av. Colon 0 - Cordoba Capital
+          Av. Colon 10 - Cordoba Capital
           <br>
           Telefono 0351-155372635
       </div>
       <div class="">
         <h2>Terminos</h2>
-        Conoce nuestros terminos y condiciones <a href="#">aqui</a>
+        Sitio Web desarrollado para uso exclusivo como Evaluacion Final de CSS y Diseño Web Responsive en NextU <a href="https://github.com/mauricioaromero/CSSyDisenoWebResponsiveEvaluacionFinal.git">(Repositorio)</a>
       </div>
       <div class="">
         <h2>Redes Sociales</h2>
@@ -74,7 +72,7 @@
       </div>
       <div class="">
         <h2>Derechos</h2>
-        &copy; 2018
+        Mauricio Romero &copy; 2018
       </div>
     </footer>
   </body>

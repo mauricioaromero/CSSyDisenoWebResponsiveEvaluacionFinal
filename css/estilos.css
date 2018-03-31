@@ -1,80 +1,179 @@
 body{
   font-family: 'Dancing Script', cursive;
   background: #02010a;
+  width: 90%;
+  margin-left: 5%;
 }
 
 header{
+  width: 100%;
+  max-width: 900px;
   background: #5b7989;
-  text-align: left;
-  color: white;
-  text-shadow: 2px 2px #02010a;
   border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px; /*Para Mozilla Firefox*/
   -webkit-border-radius: 10px 10px 0px 0px; /*Para Safari*/
-  width: 100%;
+  animation: Inicio 1s;
+}
+
+@-webkit-keyframes Inicio{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+header h1{
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+
+header nav{
+  text-align: right;
+}
+
+header nav a{
+  color: white;
+}
+
+img{
+  -webkit-filter: drop-shadow(2px 0px 0px #02010a);
+  filter: drop-shadow(2px 0px 0px #02010a);
+}
+
+#pagina-actual{
+  text-decoration: none;
 }
 
 #contenido{
-  text-align: center;
-  border: 1px solid black;
   width: 100%;
+  max-width: 900px;
+  text-align: center;
   display: flex;
 	flex-flow: row wrap;
 }
 
 #contenido img{
  border: 2px solid #02010a;
- width: 50%;
 }
 
-.central{
+.imagen-central{
   background: #82c3a6;
-  text-align: center;
   width: 100%;
 }
 
-.central img{
-  border: 2px solid #02010a;
-  width: 90%;
+.imagen-central img{
+  width: 100%;
 }
 
-.secundaria-izquierda{
+.imagen-secundaria{
   background: #d5c75f;
-  text-align: center;
+  /*border: 1px solid black;*/ /*Este requerimiento desplaza el orden de la distribucion*/
   width: 50%;
 }
 
-.secundaria-izquierda img{
-  border: 2px solid #02010a;
-  width: 90%;
+.imagen-secundaria img{
+  width: 100%;
 }
 
-.secundaria-derecha{
-  background: #d5c75f;
-  text-align: center;
-  width: 50%;
+.img-paisaje:hover{
+  transform: rotate(10deg);
 }
 
-.secundaria-derecha img{
-  border: 2px solid #02010a;
-  width: 90%;
+.img-retrato:hover{
+  transform: translate(20px, -5px);
+  -webkit-filter: drop-shadow(2px 2px 2px #82c3a6);
+  filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+
+#wrapper{
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-flow: row wrap;
+  background: #82c3a6;
+}
+
+.img-wrapper{
+  width: 33%;
+}
+
+.img-wrapper img{
+  width: 100%;
+}
+
+.img-1{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.img-2, .img-4, .img-6{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.img-3{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
 }
 
 footer{
+  width: 100%;
+  max-width: 900px;
   background: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
   -moz-border-radius: 0px 0px 10px 10px; /*Para Mozilla Firefox*/
   -webkit-border-radius: 0px 0px 10px 10px; /*Para Safari*/
-  width: 100%;
   display: flex;
 	flex-flow: row wrap;
-  text-align: center;
-}
-
-footer img{
-  width: 25px;
 }
 
 footer div{
   width: 25%;
+}
+
+footer div img{
+  width: 25px;
+}
+
+@media screen{
+  h1{
+    text-align: right;
+  }
+}
+
+@media (max-width:900px) {
+  header h1{
+    text-align: center;
+  }
+  header nav{
+    text-align: center;
+  }
+  #contenido{
+    display: flex;
+    flex-flow: column;
+  }
+  .imagen-secundaria{
+    width: 100%;
+  }
+  #wrapper{
+    display: flex;
+    flex-flow: column;
+  }
+  .img-wrapper{
+    width: 100%;
+  }
+  footer{
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+@media (min-width:900px) {
+
 }
