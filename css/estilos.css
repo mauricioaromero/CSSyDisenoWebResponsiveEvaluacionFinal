@@ -6,14 +6,14 @@ body{
 }
 
 header{
-  width: 100%;
-  max-width: 900px;
   background: #5b7989;
   border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px; /*Para Mozilla Firefox*/
   -webkit-border-radius: 10px 10px 0px 0px; /*Para Safari*/
   animation: Inicio 1s;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @-webkit-keyframes Inicio{
@@ -66,6 +66,8 @@ img{
   text-align: center;
   display: flex;
 	flex-flow: row wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #contenido img{
@@ -88,7 +90,7 @@ img{
 }
 
 .imagen-secundaria img{
-  border: 1px solid black;
+  border: 1px solid black; /*Este estilo, segun se consulto a TUTOR se aplica a las imagenes, NO al padre de este elemento*/
   width: 100%;
 }
 
@@ -108,6 +110,8 @@ img{
   display: flex;
   flex-flow: row wrap;
   background: #d5c75f;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .img-wrapper{
@@ -140,6 +144,8 @@ footer{
   -webkit-border-radius: 0px 0px 10px 10px; /*Para Safari*/
   display: flex;
 	flex-flow: row wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer div{
@@ -148,7 +154,7 @@ footer div{
 }
 
 footer div img{
-  width: 25px;
+  width: 25px; /*Esta imagen no varia tanto para Movil como para Desktop*/
 }
 
 @media screen{
